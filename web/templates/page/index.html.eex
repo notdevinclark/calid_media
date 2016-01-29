@@ -1,0 +1,7 @@
+<h1 class="ui dividing header">Calid Media Server</h1>
+
+<ul>
+  <%= for file <- @files do %>
+    <li><%= link file.filename, to: page_path(@conn, :show, file.filename) %></li>
+  <% end %>
+</ul>
